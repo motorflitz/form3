@@ -1,0 +1,142 @@
+/* Basic Reset */
+body, h1, h2, ul, li, p, div, nav, header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Vertically align items in the center */
+  padding-left: 20px; /* Add some padding on the left */
+  padding-right: 20px; /* Add some padding on the right */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none; /* Remove default bullet points */
+}
+
+nav ul li {
+  display: inline; /* Display list items horizontally */
+  margin-left: 20px; /* Add some space between nav items */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Add underline on hover for visual feedback */
+}
+
+/* Keep existing styles for form and thank you page if they are general enough */
+/* Or move them here and make them more specific if needed */
+
+/* Styles for the contact form page content */
+.contact-form-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto; /* Center the form container */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Styles for the form itself (can refine the inline styles previously added or replace them) */
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%; /* Make inputs take full width of their container */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the thank you page container */
+.thank-you-container {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: 40px auto; /* Center the container */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.thank-you-container h1 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.thank-you-container p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.thank-you-container a {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.thank-you-container a:hover {
+  background-color: #0056b3;
+}
