@@ -250,6 +250,7 @@ footer p {
   form input[type="email"],
   form textarea {
     padding: 8px;
+    font-size: 16px; /* Prevent iOS zoom */
   }
 
   form button[type="submit"] {
