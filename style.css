@@ -47,6 +47,50 @@ nav ul li a:hover {
   text-decoration: underline; /* Add underline on hover for visual feedback */
 }
 
+/* Hero Section Styles */
+.hero {
+  background-color: #007bff; /* Example background color - can be changed to an image later */
+  color: #fff; /* Light text color for contrast */
+  padding: 60px 20px; /* Generous padding */
+  text-align: center; /* Center the text content */
+  position: relative; /* For potential pseudo-elements or overlays later */
+}
+
+.hero-content h1 {
+  font-size: 2.8rem; /* Large font size for the main headline */
+  margin-bottom: 15px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem; /* Slightly larger font for the sub-headline */
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 600px; /* Constrain width for better readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #fff; /* White background for the button */
+  color: #007bff; /* Blue text color, matching the hero background */
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0; /* Slightly darker background on hover */
+  color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
 /* Keep existing styles for form and thank you page if they are general enough */
 /* Or move them here and make them more specific if needed */
 
@@ -155,4 +199,121 @@ footer {
 footer p {
   margin: 0; /* Remove default paragraph margin */
   font-size: 0.9rem;
+}
+
+/* Responsive Media Queries */
+
+/* For tablets and larger mobiles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack logo and nav vertically */
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    padding-left: 0; /* Remove padding when stacked */
+  }
+
+  nav ul li {
+    display: block; /* Make nav items block for vertical stacking */
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem; /* Reduce font size for smaller screens */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .contact-form-container {
+    margin: 20px 15px; /* Add some horizontal margin on smaller screens */
+    padding: 15px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    padding: 8px;
+  }
+
+  form button[type="submit"] {
+    padding: 10px 15px;
+    width: 100%; /* Make button full width */
+  }
+
+  .thank-you-container {
+    margin: 30px 15px; /* Adjust margin */
+    padding: 25px 15px; /* Adjust padding */
+  }
+
+  .thank-you-container h1 {
+    font-size: 1.8rem; /* Adjust font size */
+  }
+
+  .thank-you-container p {
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .thank-you-container a {
+    padding: 8px 18px;
+    font-size: 0.95rem;
+  }
+}
+
+/* For small mobiles */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  .contact-form-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .thank-you-container {
+    margin: 20px 10px; /* Further adjust margin */
+    padding: 20px 10px; /* Further adjust padding */
+  }
+
+  .thank-you-container h1 {
+    font-size: 1.6rem; /* Further adjust font size */
+  }
+
+  .thank-you-container p {
+    font-size: 0.9rem; /* Further adjust font size */
+  }
+
+  .thank-you-container a {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
 }
